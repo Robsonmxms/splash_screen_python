@@ -59,13 +59,6 @@ class Ui_SplashScreen(object):
         self.label_credits.setFont(font2)
         self.label_credits.setStyleSheet(u"color: rgb(90, 195, 199);")
         self.label_credits.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
-        self.label_image = QLabel(self.dropShadowFrame)
-        self.label_image.setObjectName(u"label_image")
-        self.label_image.setGeometry(QRect(0, 0, 661, 221))
-        self.label_image.setStyleSheet(u"background-image: url(:/background/background.jpg);\n"
-"")
-        self.label_image.setPixmap(QPixmap(u":/background/background.jpg"))
-        self.label_image.setScaledContents(True)
         self.label_Background = QLabel(self.dropShadowFrame)
         self.label_Background.setObjectName(u"label_Background")
         self.label_Background.setGeometry(QRect(0, 220, 661, 161))
@@ -87,12 +80,18 @@ class Ui_SplashScreen(object):
 "}")
         self.progressBar.setValue(0)
         self.progressBar.setTextVisible(True)
+        self.label = QLabel(self.dropShadowFrame)
+        self.label.setObjectName(u"label")
+        self.label.setGeometry(QRect(0, 0, 661, 221))
+        self.label.setStyleSheet(u"background-image: url(\"/background/images/background.jpg\")")
+        self.label.setPixmap(QPixmap(u":/background/images/background.jpg"))
+        self.label.setScaledContents(True)
         self.label_Background.raise_()
         self.label_credits.raise_()
-        self.label_image.raise_()
         self.label_description.raise_()
         self.label_title.raise_()
         self.progressBar.raise_()
+        self.label.raise_()
 
         self.verticalLayout.addWidget(self.dropShadowFrame)
 
@@ -108,7 +107,7 @@ class Ui_SplashScreen(object):
         self.label_title.setText(QCoreApplication.translate("SplashScreen", u"<strong>YOUR</strong> APP NAME", None))
         self.label_description.setText(QCoreApplication.translate("SplashScreen", u"<strong>APP</strong> DESCRIPTION", None))
         self.label_credits.setText(QCoreApplication.translate("SplashScreen", u"<html><head/><body><p><span style=\" font-weight:600;\">Created by</span>: your name</p></body></html>", None))
-        self.label_image.setText("")
         self.label_Background.setText("")
+        self.label.setText("")
     # retranslateUi
 

@@ -176,7 +176,7 @@ QProgressBar::chunk{
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">url:/background/images/background.jpg</string>
+        <string notr="true">background-image: url(&quot;/background/images/background.jpg&quot;)</string>
        </property>
        <property name="text">
         <string/>
