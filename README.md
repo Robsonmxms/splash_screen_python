@@ -46,7 +46,10 @@ def __changeDescription(self):
 
 ![splash_screen](https://github.com/Robsonmxms/splash_screen_python/blob/master/assets/images/splash_screen.PNG)
 
-# How to Run the Project
+# Getting Started
+
+- Use the offical documentation to install Python: https://www.python.org/downloads/
+
 - At work terminal:
   
   ```bash
